@@ -1,4 +1,4 @@
-package br.app.conexoa;
+package br.app.service;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

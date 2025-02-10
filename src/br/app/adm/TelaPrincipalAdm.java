@@ -1,7 +1,5 @@
 package br.app.adm;
 
-import br.app.telas.*;
-
 
 public class TelaPrincipalAdm extends javax.swing.JFrame {
 

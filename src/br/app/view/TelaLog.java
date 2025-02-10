@@ -1,7 +1,7 @@
-package br.app.telas;
+package br.app.view;
 
 import java.sql.*;
-import br.app.conexoa.ModuloConexao;
+import br.app.service.ModuloConexao;
 import javax.swing.*;
 import br.app.adm.TelaLogAdm;
 import java.util.logging.Level;

@@ -1,9 +1,9 @@
-package br.app.telas;
+package br.app.view;
 // autor: @ingrydf12
 // https://github.com/ingrydf12
 
 import java.sql.*;
-import br.app.conexoa.ModuloConexao;
+import br.app.service.ModuloConexao;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
