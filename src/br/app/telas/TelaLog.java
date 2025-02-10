@@ -6,7 +6,6 @@ import javax.swing.*;
 import br.app.adm.TelaLogAdm;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.Arrays;
 
 public class TelaLog extends javax.swing.JFrame {
 

@@ -21,13 +21,12 @@ public class TelaLogAdm extends javax.swing.JFrame {
     }
 
     private void entradaAdm() {
-        // Consulta com placeholders (?) para os parâmetros
         String sqlQuery = "SELECT * FROM tbadmins WHERE login=? AND senha=?";
 
         try (PreparedStatement pst = conexao.prepareStatement(sqlQuery)) {
             // Substitua os parâmetros
-            pst.setString(1, txtLoginAdm.getText());  // Login do admin
-            pst.setString(2, new String(txtSenhaAdm.getPassword()));  // Senha do admin
+            pst.setString(1, txtLoginAdm.getText());
+            pst.setString(2, new String(txtSenhaAdm.getPassword()));
 
             try (ResultSet rs = pst.executeQuery()) {
                 if (rs.next()) {
@@ -73,7 +72,12 @@ public class TelaLogAdm extends javax.swing.JFrame {
 
         jLabel12.setText("Senha");
 
+        txtLoginAdm.setName(""); // NOI18N
+
         btnEntradaAdm.setText("Entrar");
+        btnEntradaAdm.setMaximumSize(new java.awt.Dimension(76, 35));
+        btnEntradaAdm.setMinimumSize(new java.awt.Dimension(76, 35));
+        btnEntradaAdm.setPreferredSize(new java.awt.Dimension(76, 35));
         btnEntradaAdm.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEntradaAdmActionPerformed(evt);
@@ -132,7 +136,7 @@ public class TelaLogAdm extends javax.swing.JFrame {
                     .addComponent(jLabel12)
                     .addComponent(txtSenhaAdm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32)
-                .addComponent(btnEntradaAdm)
+                .addComponent(btnEntradaAdm, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
@@ -149,7 +153,7 @@ public class TelaLogAdm extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 386, Short.MAX_VALUE)
+            .addGap(0, 418, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
