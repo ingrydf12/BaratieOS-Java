@@ -93,7 +93,7 @@ public class TelaLog extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Login", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("NewsGoth BT", 1, 14), java.awt.Color.BLACK)); // NOI18N
         jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/logobaratie.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/logobaratie.png"))); // NOI18N
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setForeground(new java.awt.Color(0, 0, 0));
@@ -180,7 +180,7 @@ public class TelaLog extends javax.swing.JFrame {
                     .addComponent(btnEntrar)
                     .addComponent(btnCadastro)
                     .addComponent(btnRestrito))
-                .addContainerGap(39, Short.MAX_VALUE))
+                .addContainerGap(25, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1, "card2");

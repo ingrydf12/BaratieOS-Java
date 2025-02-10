@@ -57,7 +57,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/bannerbaratie.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/bannerbaratie.png"))); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
 
         jLabel2.setFont(new java.awt.Font("Myanmar Text", 1, 48)); // NOI18N
@@ -78,7 +78,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(17, 189, 201));
 
         btnCarrinho.setBackground(new java.awt.Color(0, 153, 153));
-        btnCarrinho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/shopping-cart-free-icon-font.png"))); // NOI18N
+        btnCarrinho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/shopping-cart-free-icon-font.png"))); // NOI18N
         btnCarrinho.setBorder(null);
         btnCarrinho.setBorderPainted(false);
         btnCarrinho.addActionListener(new java.awt.event.ActionListener() {
@@ -88,7 +88,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
 
         btnCardapio.setBackground(new java.awt.Color(0, 153, 153));
-        btnCardapio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/fonte-de-icone-de-edit-gratis (1).png"))); // NOI18N
+        btnCardapio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/fonte-de-icone-de-edit-gratis (1).png"))); // NOI18N
         btnCardapio.setBorderPainted(false);
         btnCardapio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,7 +97,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
 
         btnDev.setBackground(new java.awt.Color(0, 153, 153));
-        btnDev.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/phone-call-free-icon-font.png"))); // NOI18N
+        btnDev.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/phone-call-free-icon-font.png"))); // NOI18N
         btnDev.setBorder(null);
         btnDev.setBorderPainted(false);
         btnDev.addActionListener(new java.awt.event.ActionListener() {
@@ -107,12 +107,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         });
 
         btnPesquisa.setBackground(new java.awt.Color(0, 153, 153));
-        btnPesquisa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/search-alt-free-icon-font.png"))); // NOI18N
+        btnPesquisa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/search-alt-free-icon-font.png"))); // NOI18N
         btnPesquisa.setBorder(null);
         btnPesquisa.setBorderPainted(false);
 
         btnAvalie.setBackground(new java.awt.Color(0, 153, 153));
-        btnAvalie.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/star-free-icon-font.png"))); // NOI18N
+        btnAvalie.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/star-free-icon-font.png"))); // NOI18N
         btnAvalie.setBorder(null);
         btnAvalie.setBorderPainted(false);
 

@@ -27,7 +27,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(7, 131, 131));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/bannerbaratie.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/bannerbaratie.png"))); // NOI18N
         jLabel1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
 
         jLabel2.setFont(new java.awt.Font("Myanmar Text", 1, 48)); // NOI18N

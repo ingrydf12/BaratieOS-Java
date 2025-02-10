@@ -144,7 +144,7 @@ public class TelaCardapio extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 153, 0));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/logobaratie.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/logobaratie.png"))); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Myanmar Text", 1, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));

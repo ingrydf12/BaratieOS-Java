@@ -130,7 +130,7 @@
                       <Component id="btnCadastro" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnRestrito" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="39" max="32767" attributes="0"/>
+                  <EmptySpace pref="25" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -139,7 +139,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/app/imagens/logobaratie.png"/>
+              <Image iconType="3" name="/br/app/assets/logobaratie.png"/>
             </Property>
           </Properties>
         </Component>

@@ -173,7 +173,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/app/imagens/bannerbaratie.png"/>
+              <Image iconType="3" name="/br/app/assets/bannerbaratie.png"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
@@ -292,7 +292,7 @@
                   <Color blue="99" green="99" red="0" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/br/app/imagens/shopping-cart-free-icon-font.png"/>
+                  <Image iconType="3" name="/br/app/assets/shopping-cart-free-icon-font.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -309,7 +309,7 @@
                   <Color blue="99" green="99" red="0" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/br/app/imagens/fonte-de-icone-de-edit-gratis (1).png"/>
+                  <Image iconType="3" name="/br/app/assets/fonte-de-icone-de-edit-gratis (1).png"/>
                 </Property>
                 <Property name="borderPainted" type="boolean" value="false"/>
               </Properties>
@@ -323,7 +323,7 @@
                   <Color blue="99" green="99" red="0" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/br/app/imagens/phone-call-free-icon-font.png"/>
+                  <Image iconType="3" name="/br/app/assets/phone-call-free-icon-font.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -340,7 +340,7 @@
                   <Color blue="99" green="99" red="0" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/br/app/imagens/search-alt-free-icon-font.png"/>
+                  <Image iconType="3" name="/br/app/assets/search-alt-free-icon-font.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
@@ -354,7 +354,7 @@
                   <Color blue="99" green="99" red="0" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/br/app/imagens/star-free-icon-font.png"/>
+                  <Image iconType="3" name="/br/app/assets/star-free-icon-font.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="null"/>
