@@ -14,7 +14,7 @@
         <Menu class="javax.swing.JMenu" name="jMenu1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/br/app/imagens/menu24.png"/>
+              <Image iconType="3" name="/br/app/assets/menu24.png"/>
             </Property>
           </Properties>
         </Menu>

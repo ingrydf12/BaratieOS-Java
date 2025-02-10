@@ -166,7 +166,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(53, Short.MAX_VALUE)
+                .addContainerGap(49, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnAvalie, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -179,7 +179,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                     .addComponent(jLabel9)
                     .addComponent(jLabel10)
                     .addComponent(jLabel11))
-                .addContainerGap(193, Short.MAX_VALUE))
+                .addContainerGap(189, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -223,7 +223,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.setBorder(null);
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/menu24.png"))); // NOI18N
+        jMenu1.setBackground(new java.awt.Color(255, 255, 255));
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/menu24.png"))); // NOI18N
 
         jMenuItem1.setText("Cardápio");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
@@ -238,10 +239,10 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/carrinho-de-compras (1).png"))); // NOI18N
+        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/carrinho-de-compras (1).png"))); // NOI18N
         jMenuBar1.add(jMenu3);
 
-        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/estrela.png"))); // NOI18N
+        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/estrela.png"))); // NOI18N
         jMenu5.setToolTipText("");
         jMenu5.setHideActionText(true);
         jMenu5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);

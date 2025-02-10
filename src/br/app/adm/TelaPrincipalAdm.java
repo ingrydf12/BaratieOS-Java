@@ -90,7 +90,7 @@ public class TelaPrincipalAdm extends javax.swing.JFrame {
 
         jMenuBar1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/imagens/menu24.png"))); // NOI18N
+        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/menu24.png"))); // NOI18N
         jMenuBar1.add(jMenu1);
 
         jMenu2.setText("Opções");
