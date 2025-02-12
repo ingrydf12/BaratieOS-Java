@@ -41,6 +41,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -79,7 +80,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         btnCarrinho.setBackground(new java.awt.Color(0, 153, 153));
         btnCarrinho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/shopping-cart-free-icon-font.png"))); // NOI18N
-        btnCarrinho.setBorder(null);
+        btnCarrinho.setBorder(FlatButtonBorder);
         btnCarrinho.setBorderPainted(false);
         btnCarrinho.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,7 +99,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         btnDev.setBackground(new java.awt.Color(0, 153, 153));
         btnDev.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/phone-call-free-icon-font.png"))); // NOI18N
-        btnDev.setBorder(null);
+        btnDev.setBorder(FlatButtonBorder);
         btnDev.setBorderPainted(false);
         btnDev.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,12 +109,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         btnPesquisa.setBackground(new java.awt.Color(0, 153, 153));
         btnPesquisa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/search-alt-free-icon-font.png"))); // NOI18N
-        btnPesquisa.setBorder(null);
+        btnPesquisa.setBorder(FlatButtonBorder);
         btnPesquisa.setBorderPainted(false);
 
         btnAvalie.setBackground(new java.awt.Color(0, 153, 153));
         btnAvalie.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/app/assets/star-free-icon-font.png"))); // NOI18N
-        btnAvalie.setBorder(null);
+        btnAvalie.setBorder(FlatButtonBorder);
         btnAvalie.setBorderPainted(false);
 
         jLabel4.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
@@ -130,7 +131,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Pesquisa");
+        jLabel11.setText("Avalie");
+
+        jLabel12.setFont(new java.awt.Font("Microsoft YaHei UI", 1, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Pesquisa");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -154,14 +159,18 @@ public class TelaPrincipal extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel10)
                         .addGap(130, 130, 130)))
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addComponent(jLabel11)))
-                .addGap(90, 90, 90)
-                .addComponent(btnAvalie, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39))
+                        .addComponent(btnPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(90, 90, 90)
+                        .addComponent(btnAvalie, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(39, 39, 39))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(jLabel12)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel11)
+                        .addGap(84, 84, 84))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -178,7 +187,8 @@ public class TelaPrincipal extends javax.swing.JFrame {
                     .addComponent(jLabel4)
                     .addComponent(jLabel9)
                     .addComponent(jLabel10)
-                    .addComponent(jLabel11))
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12))
                 .addContainerGap(189, Short.MAX_VALUE))
         );
 
@@ -355,6 +365,7 @@ tela.setVisible(true);
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

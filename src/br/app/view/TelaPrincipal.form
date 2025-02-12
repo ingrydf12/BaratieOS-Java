@@ -252,16 +252,21 @@
                               <EmptySpace min="-2" pref="130" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="btnPesquisa" min="-2" pref="130" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
+                              <Component id="btnPesquisa" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                              <Component id="btnAvalie" min="-2" pref="130" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                              <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
                               <Component id="jLabel11" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                      <Component id="btnAvalie" min="-2" pref="130" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -282,6 +287,7 @@
                           <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace pref="189" max="32767" attributes="0"/>
                   </Group>
@@ -297,8 +303,8 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/br/app/assets/shopping-cart-free-icon-font.png"/>
                 </Property>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="null"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="FlatButtonBorder" type="code"/>
                 </Property>
                 <Property name="borderPainted" type="boolean" value="false"/>
               </Properties>
@@ -328,8 +334,8 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/br/app/assets/phone-call-free-icon-font.png"/>
                 </Property>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="null"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="FlatButtonBorder" type="code"/>
                 </Property>
                 <Property name="borderPainted" type="boolean" value="false"/>
               </Properties>
@@ -345,8 +351,8 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/br/app/assets/search-alt-free-icon-font.png"/>
                 </Property>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="null"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="FlatButtonBorder" type="code"/>
                 </Property>
                 <Property name="borderPainted" type="boolean" value="false"/>
               </Properties>
@@ -359,8 +365,8 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/br/app/assets/star-free-icon-font.png"/>
                 </Property>
-                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="null"/>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="FlatButtonBorder" type="code"/>
                 </Property>
                 <Property name="borderPainted" type="boolean" value="false"/>
               </Properties>
@@ -399,6 +405,17 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel11">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Microsoft YaHei UI" size="12" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Avalie"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel12">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Microsoft YaHei UI" size="12" style="1"/>

@@ -11,8 +11,30 @@ This Java application aims to be a case study of OS systems, containing integrat
 - MySQL
 - XAMPP
 
-### Objective
+### 💡 Objective
 
 The implementation of the work order management system aims to make operations more efficient, organizing workflows and having greater control.
 
 The idea of ​​this project is to deal with these types of systems, in addition to understanding more about the Java language and its integrations with databases, APIs and other functionality implementations.
+
+### 📌 Features
+
+- Display and filters by category on the menu, such as food, drinks and others.
+- Basic authentication and authorization using query in SQL database
+- CRUD implementation in the shopping cart
+
+## 📦 Install and run
+
+### Requirement
+
+> ou must have the database on a MySQL Workbench or DBeaver and a server that supports mySQL such as XAMPP.
+
+1. Clone this repository:
+
+```bash
+    git clone https://github.com/ingrydf12/BaratieOS-Java.git
+```
+
+2. Open the project in an IDE such as Eclipse or Netbeans.
+3. Start the MySQL server in a XAMPP for example.
+4. Run the project and explore.
