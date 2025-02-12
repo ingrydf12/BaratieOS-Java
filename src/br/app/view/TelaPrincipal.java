@@ -5,12 +5,14 @@ import br.app.service.ModuloConexao;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import javax.swing.border.Border;
 
 public class TelaPrincipal extends javax.swing.JFrame {
     
     Connection conexao = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
+    private Border FlatButtonBorder;
     
     public TelaPrincipal() {
         initComponents();

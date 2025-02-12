@@ -6,103 +6,33 @@ import java.sql.*;
 import br.app.service.ModuloConexao;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import net.proteanit.sql.DbUtils;
+import br.app.viewmodel.TelaCardapioViewModel;
 
 public class TelaCardapio extends javax.swing.JFrame {
 
-    Connection conexao = null;
-    PreparedStatement pst = null;
-    ResultSet rs = null; //exibe o resultado da conexão
-    
-    private void filtroComida(){
-        String sql = "select * from tbpratos where categoria = 'comida'";
-        
-        try {
-                pst = conexao.prepareStatement(sql);
-                rs=pst.executeQuery();
-                
-            tblCardapio.setModel(DbUtils.resultSetToTableModel(rs));
-            } catch (Exception e) {
-                
-                JOptionPane.showMessageDialog(null, e);
-            }  
-        }
-    
-        private void filtroBebidas(){
-        String sql = "select * from tbacomp where categoria = 'bebidas'";
-        
-            try {
-                pst = conexao.prepareStatement(sql);
-                rs=pst.executeQuery();
-                
-                tblCardapio.setModel(DbUtils.resultSetToTableModel(rs));
-            } catch (Exception e) {
-                
-                JOptionPane.showMessageDialog(null, e);
-            }  
-        }
-        
-            private void filtroEntradas(){
-        String sql = "select * from tbpratos where categoria = 'entradas'";
-        
-            try {
-                pst = conexao.prepareStatement(sql);
-                rs=pst.executeQuery();
-                
-                tblCardapio.setModel(DbUtils.resultSetToTableModel(rs));
-            } catch (Exception e) {
-                
-                JOptionPane.showMessageDialog(null, e);
-            }  
-        }
-            
-            private void filtroSobremesa(){
-        String sql = "select * from tbacomp where categoria = 'sobremesa'";
-        
-            try {
-                pst = conexao.prepareStatement(sql);
-                rs=pst.executeQuery();
-                
-                tblCardapio.setModel(DbUtils.resultSetToTableModel(rs));
-                
-            } catch (Exception e) {
-                
-                JOptionPane.showMessageDialog(null, "Não encontrado");
-            }  
-        }
-            
-            private void filtroSaladas(){
-        String sql = "select * from tbacomp where categoria = 'saladas'";
-        
-            try {
-                pst = conexao.prepareStatement(sql);
-                rs=pst.executeQuery();
-                
-                tblCardapio.setModel(DbUtils.resultSetToTableModel(rs));
-                
-            } catch (Exception e) {
-                
-                JOptionPane.showMessageDialog(null, e);
-            }  
-        }
-            
-    
+    private TelaCardapioViewModel viewModel;
+
     public TelaCardapio() {
         initComponents();
         setExtendedState(MAXIMIZED_BOTH);
+
         try {
-            conexao = ModuloConexao.conector(); //CHAMANDO O MÉTODO CONECTOR
+            ModuloConexao.conector(); // Chama o método de conexão
+            viewModel = new TelaCardapioViewModel(); // Instancia a ViewModel
+            viewModel.getAllPlates();
         } catch (SQLException ex) {
             Logger.getLogger(TelaCardapio.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
-    
-    
-    
-    
+    private void atualizarTabela(String categoria) {
+        DefaultTableModel modelo = viewModel.filtrarPorCategoria(categoria);
+        if (modelo != null) {
+            tblCardapio.setModel(modelo);
+        }
+    }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -282,23 +212,23 @@ public class TelaCardapio extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void RadioButtonComActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonComActionPerformed
-       filtroComida();
+        atualizarTabela("comida");
     }//GEN-LAST:event_RadioButtonComActionPerformed
 
     private void RadioButtonBebActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonBebActionPerformed
-        filtroBebidas();
+        atualizarTabela("bebidas");
     }//GEN-LAST:event_RadioButtonBebActionPerformed
 
     private void RadioButtonEntActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonEntActionPerformed
-       filtroEntradas();
+        atualizarTabela("entradas");
     }//GEN-LAST:event_RadioButtonEntActionPerformed
 
     private void RadioButtonSobActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonSobActionPerformed
-        filtroSobremesa();
+        atualizarTabela("sobremesas");
     }//GEN-LAST:event_RadioButtonSobActionPerformed
 
     private void RadioButtonSaladActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RadioButtonSaladActionPerformed
-        filtroSaladas();
+        atualizarTabela("saladas");
     }//GEN-LAST:event_RadioButtonSaladActionPerformed
 
     /**

@@ -27,7 +27,7 @@ The idea of ​​this project is to deal with these types of systems, in additi
 
 ### Requirement
 
-> ou must have the database on a MySQL Workbench or DBeaver and a server that supports mySQL such as XAMPP.
+> You must have the database on a MySQL Workbench or DBeaver and a server that supports mySQL such as XAMPP.
 
 1. Clone this repository:
 
